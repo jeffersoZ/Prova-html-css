@@ -1,0 +1,39 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    height: 100svh;
+    grid-template-areas: 
+    "header header header header"
+    "main   main   .      sidebar"
+    "footer footer footer footer";
+    grid-template-rows: 0.7fr 5fr 0.5fr;
+}
+
+.menu_bar {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.Icone_carrinho{
+    width: 50px;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #007bff;
+}
